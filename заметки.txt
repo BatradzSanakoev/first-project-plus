@@ -1,0 +1,33 @@
+ <section class="grid">
+                <img src="images/car1.svg" alt="" class="car">
+                <img src="images/car2.svg" alt="" class="car">
+                <img src="images/car3.svg" alt="" class="car">
+                <img src="images/car4.svg" alt="" class="car">
+                <img src="images/car5.svg" alt="" class="car">
+            </section>
+
+
+
+
+            .grid {
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 20px;
+    min-height: 560px;
+}
+
+.car:first-of-type {
+    grid-row-start: 1;
+    grid-row-end: 4;
+    border-radius: 10px;
+    max-height: 552px;
+}
+
+.car {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 5px;
+}
